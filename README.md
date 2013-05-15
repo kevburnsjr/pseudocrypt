@@ -4,7 +4,7 @@ PseudoCrypt
 A small library for creating reversible obfuscated identifiers for integer values.
 
 ```go
-ps := Create()
+ps := pseudocrypt.Create()
 for i := 0; i < 10; i++ {
     hash := ps.Hash(int64(i), 5)
     fmt.Println(i, " - ", hash, " - ", ps.Unhash(hash))
